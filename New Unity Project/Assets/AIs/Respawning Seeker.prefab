@@ -1487,7 +1487,7 @@ Rigidbody:
   m_GameObject: {fileID: 1000011122678154}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 0.1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1654,10 +1654,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_rigidbody: {fileID: 54000012776033218}
-  m_maxAccelerationMagnitude: 30
-  m_velocityLimit: 60
+  m_maxAccelerationMagnitude: 6
+  m_velocityLimit: 40
   m_slowDownRadius: 10
-  m_minDistance: 1
+  m_minDistance: 0.1
 --- !u!114 &114000014264298788
 MonoBehaviour:
   m_ObjectHideFlags: 1

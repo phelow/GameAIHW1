@@ -1,7 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PathFollow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DynamicPursueWithDynamicArrive.cs">
     <Files>
+      <File FileName="Assets\DynamicPursueWithDynamicArrive.cs" Line="35" Column="66" />
       <File FileName="Assets\Toon Character Pack\Scripts\ToonCharacterController.js" Line="1" Column="1" />
       <File FileName="Assets\Toon Character Pack\Scripts\AnimTriggers.cs" Line="1" Column="1" />
       <File FileName="Assets\BaseAIController.cs" Line="1" Column="1" />
@@ -11,9 +12,8 @@
       <File FileName="Assets\SpawnPursuer.cs" Line="1" Column="1" />
       <File FileName="Assets\Deparent.cs" Line="1" Column="1" />
       <File FileName="Assets\MoveTarget.cs" Line="1" Column="1" />
-      <File FileName="Assets\PathFollow.cs" Line="23" Column="71" />
+      <File FileName="Assets\PathFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\PathNode.cs" Line="1" Column="1" />
-      <File FileName="Assets\DynamicPursueWithDynamicArrive.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
