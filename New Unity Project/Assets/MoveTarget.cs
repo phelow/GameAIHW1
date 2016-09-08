@@ -21,7 +21,9 @@ public class MoveTarget : MonoBehaviour {
 			float lerpTime = Random.Range (minLerpTime, maxLerpTime);
 
 			lastPosition.transform.position = this.transform.position;
-			targetPosition.transform.position = new Vector3 (m_circleCenter.transform.position.x + Random.Range(-radius,radius), m_circleCenter.transform.position.y, m_circleCenter.transform.position.z + Random.Range(-radius,radius));
+			Vector3 newMovement = new Vector3 (Random.Range (-radius, radius), 0, Random.Range (-radius, radius)).normalized * radius;
+
+			targetPosition.transform.position = m_circleCenter.transform.position + newMovement;
 			float tPassed = 0.0f;
 
 			while (tPassed < lerpTime) {

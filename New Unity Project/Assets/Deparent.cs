@@ -9,6 +9,6 @@ public class Deparent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = m_psuedoParent.transform.position + m_psuedoParent.transform.forward * 100;
+		transform.position = m_psuedoParent.transform.position + m_psuedoParent.transform.forward * 10;
 	}
 }

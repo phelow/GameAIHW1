@@ -10,7 +10,7 @@ public class PathFollow : DynamicPursueWithDynamicArrive{
 		 * 3: Set the target some distance ahead
 		 * 4: From the characer's predited position call seek to reach target
 		 * */
-		if (m_target == null || Vector3.Distance (this.transform.position, m_target.transform.position) < m_minDistance) {
+		if (m_target == null || Vector3.Distance (this.transform.position, m_target.transform.position) <= m_minDistance) {
 			//1: Predict character's location after a short period of time.
 			Vector3 nextPosition = this.transform.position + m_rigidbody.velocity;
 
@@ -19,6 +19,8 @@ public class PathFollow : DynamicPursueWithDynamicArrive{
 			//3: Set the target some distance ahead
 			m_target = nearestNode.GetComponent<PathNode> ().m_nextNode;
 		}
+
+
 
 		//4: From the characer's predited position call seek to reach target
 		this.Pursue ();

@@ -30,7 +30,8 @@ public class DynamicEvade : BaseAIController {
 			m_rigidbody.velocity = m_rigidbody.velocity.normalized * m_velocityLimit;
 		}
 
-		//4. Angular Acceleration = 0
-		m_rigidbody.angularVelocity = Vector3.zero;
+		Vector3 headingDistance = Vector3.Cross (transform.forward + m_rigidbody.angularVelocity, direction) * Time.deltaTime * 5.0f;
+
+		m_rigidbody.AddTorque(headingDistance);
 	}
 }
